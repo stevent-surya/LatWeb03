@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #F5DEB3;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #D4AF37;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Home Section */
+.home-section {
+    background-image: url('../img/bg-2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #D4AF37;
+    position: relative;
+}
+
+.home-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(184, 212, 240, 0.7);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #F5DEB3;
+    padding: 40px 20px;
+    border: 2px solid #D4AF37;
+}
+
+.section-button {
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto 40px;
+    font-weight: bold;
+}
+
+.section-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    flex: 1;
+}
+
+.service-item h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* About Section */
+.about-section {
+    background-color: #D8BFD8;
+    padding: 40px 20px;
+    border: 2px solid #D4AF37;
+}
+
+.about-section > p {
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-text p {
+    color: #555;
+    font-size: 14px;
+}
+
+.performance {
+    flex: 1;
+}
+
+.performance h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.chart-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.chart-content img {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #B8E6B8;
+    padding: 40px 20px;
+    border: 2px solid #D4AF37;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4169E1;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3151C1;
+}
+
+/* Footer */
+footer {
+    background-color: #F5DEB3;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #D4AF37;
+    color: #333;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
